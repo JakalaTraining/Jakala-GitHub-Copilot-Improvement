@@ -1,0 +1,11 @@
+Prompt 1 – Struttura generale e funzionalità richieste
+Crea un programma in Python che simuli una versione semplificata di Twitter. Ogni utente è identificato da un intero userId. Deve essere possibile postare tweet con tweetId, seguire e smettere di seguire altri utenti, e recuperare un feed con i 10 tweet più recenti da sé stessi o da chi si segue. Crea una classe Twitter con metodi postTweet, getNewsFeed, follow, unfollow e __init__. Includi un esempio d’uso.
+________________________________________
+Prompt 2 – Miglioramento dell’efficienza del feed
+Estendi il programma precedente ottimizzando il metodo getNewsFeed. Usa una struttura dati efficiente, come una max-heap o un heapq con ordinamento inverso, per ottenere i 10 tweet più recenti tra l’utente stesso e chi segue. Ogni tweet deve essere associato a un timestamp crescente per rappresentare l’ordine temporale. Minimizza il tempo di accesso ai tweet più recenti.
+________________________________________
+Prompt 3 – Modularità, scalabilità e testabilità
+Rendi il codice più modulare e scalabile separando la logica di tweet, utenti e relazioni in classi dedicate (ad es. Tweet, User, Twitter). Scrivi commenti chiari e docstring per ogni classe e metodo. Aggiungi funzioni helper private ove necessario. Scrivi un set base di test o esempi che simulino utenti multipli con azioni complesse di follow/unfollow/post. Ottimizza la memoria e il tempo di esecuzione.
+________________________________________
+Prompt 4 -  Documentazione in Markdown
+Scrivi la documentazione tecnica in formato Markdown per un progetto che implementa una versione semplificata di Twitter.

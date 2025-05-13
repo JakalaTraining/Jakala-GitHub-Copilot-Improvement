@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login UI</title>
+  <style>
+    body {
+      background: #393939;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+    }
+    .avatar {
+      margin-bottom: 48px;
+    }
+    .avatar svg {
+      display: block;
+      width: 180px;
+      height: 180px;
+    }
+    .input {
+      width: 340px;
+      height: 60px;
+      border: none;
+      border-radius: 30px;
+      background: #636363;
+      color: #fff;
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 28px;
+      outline: none;
+      transition: background 0.2s;
+    }
+    .input:focus {
+      background: #7d7d7d;
+    }
+    .info {
+      color: #fff;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .sign-in-btn {
+      width: 340px;
+      height: 60px;
+      border: none;
+      border-radius: 30px;
+      background: #e6e6e6;
+      color: #636363;
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .sign-in-btn:hover {
+      background: #d3d3d3;
+    }
+    .info-bottom {
+      color: #fff;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar">
+      <!-- Simple SVG user icon -->
+      <svg viewBox="0 0 180 180">
+        <circle cx="90" cy="90" r="80" stroke="#fff" stroke-width="6" fill="none"/>
+        <circle cx="90" cy="74" r="36" stroke="#fff" stroke-width="6" fill="none"/>
+        <path d="M42,137
+                 Q90,110 138,137
+                 Q90,173 42,137"
+              fill="none" stroke="#fff" stroke-width="6"/>
+      </svg>
+    </div>
+    <input class="input" type="text" placeholder="Username" autocomplete="username">
+    <input class="input" type="password" placeholder="Password" autocomplete="current-password">
+    <div class="info">Lorem ipsum</div>
+    <button class="sign-in-btn">Sign in</button>
+    <div class="info-bottom">Lorem ipsum</div>
+  </div>
+</body>
+</html>

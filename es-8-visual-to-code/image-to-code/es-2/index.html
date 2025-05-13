@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Tesserati - Inserisci Nuovo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="welcome">
+        <b><i>Benvenuto</i></b><br>
+        <span class="username">Lorenzo</span>
+      </div>
+      <div class="alerts">
+        <div class="solleciti">Solleciti (0)</div>
+        <div class="documenti-eliminare">Documenti da Eliminare (0)</div>
+      </div>
+      <div class="sidebar-buttons">
+        <button>Aggiungi Cliente</button>
+        <button>Archivio Clienti</button>
+        <button>Aggiungi Libro</button>
+        <button>Archivio Libri</button>
+        <button>Concedi Prestito</button>
+        <button>Mostra Prestiti</button>
+        <button>Stampe</button>
+        <button>Documenti</button>
+      </div>
+      <button class="exit-btn">Esci</button>
+    </aside>
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>
+        <span class="section-title">Tesserati - Inserisci Nuovo</span>
+      </h1>
+      <form id="tesserati-form">
+        <div class="form-row">
+          <label for="cognome">Cognome</label>
+          <input type="text" id="cognome" name="cognome">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+        <div class="form-row">
+          <label for="indirizzo">Indirizzo</label>
+          <input type="text" id="indirizzo" name="indirizzo">
+          <label for="citta">Città</label>
+          <input type="text" id="citta" name="citta">
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="dataNascita">Data di Nascita</label>
+          <input type="date" id="dataNascita" name="dataNascita">
+        </div>
+        <div class="form-row">
+          <label for="cap">CAP</label>
+          <input type="text" id="cap" name="cap">
+          <label for="telefono">Telefono</label>
+          <input type="text" id="telefono" name="telefono">
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email">
+          <label for="numDocumento">N° Documento</label>
+          <input type="text" id="numDocumento" name="numDocumento">
+        </div>
+        <div class="form-row">
+          <label for="tipoDocumento">Tipo Documento</label>
+          <select id="tipoDocumento" name="tipoDocumento">
+            <option value="cartaIdentita">Carta di Identità</option>
+            <option value="patente">Patente</option>
+            <option value="passaporto">Passaporto</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="conferma">Conferma</button>
+          <button type="reset" id="resetta">Resetta</button>
+        </div>
+      </form>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
